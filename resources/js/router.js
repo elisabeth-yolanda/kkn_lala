@@ -10,6 +10,11 @@ import ContactUs from './pages/ContactUs/Index.vue';
 import Induestires from './pages/Industries/Index.vue';
 import Supplies from './pages/Supplies/Index.vue';
 
+import Berita from './pages/Berita/Index.vue';
+import BeritaShow from './pages/Berita/Show/Index.vue';
+import GaleriFoto from './pages/GaleriFoto/Index.vue';
+import LayananJemaat from './pages/LayananJemaat/Index.vue';
+
 const routes = [
     {
         path: '/',
@@ -60,6 +65,26 @@ const routes = [
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
         component: NotFound
+    },
+    {
+        path: '/berita',
+        name: 'Berita',
+        component: Berita
+    },
+    {
+        path: '/berita/show',
+        name: 'BeritaShow',
+        component: BeritaShow
+    },
+    {
+        path: '/galeri-foto',
+        name: 'GaleriFoto',
+        component: GaleriFoto
+    },
+    {
+        path: '/layanan-jemaat',
+        name: 'LayananJemaat',
+        component: LayananJemaat
     },
 ];
 
