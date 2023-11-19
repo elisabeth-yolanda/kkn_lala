@@ -5,7 +5,7 @@
                 <div class="font-size-24 font-weight-500">Galeri Foto Terbaru</div>
                 <div class="card-container mt-4">
                     <div v-for="(card, index) in cards.slice(0, 3)" :key="index" class="card">
-                        <img :src="card.imageUrl" :alt="card.title" class="card-image" />
+                        <img src="/assets/images/header1.jpg" alt="card.title" class="card-image" />
                         <div class="card-content">
                             <h3>{{ card.title }}</h3>
                             <p class="description">{{ card.description }}</p>
@@ -17,7 +17,8 @@
         <hr>
         <div class="row justify-content-center">
             <div v-for="(card, index) in cards" :key="index" class="card-all">
-                <img :src="card.imageUrl" :alt="card.title" class="card-all-image" />
+                <!-- <img :src="card.imageUrl" :alt="card.title" class="card-all-image" /> -->
+                <img src="/assets/images/header1.jpg" alt="card.title" class="card-image" />
                 <div class="card-all-content">
                     <h3>{{ card.title }}</h3>
                     <p class="description">{{ card.description }}</p>
@@ -33,74 +34,74 @@ export default {
         return {
             cards: [
                 {
-                    title: 'Card 1',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 2',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 3',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: '01-23-2023 00:00:00',
                 },
                 {
-                    title: 'Card 4',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 5',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 6',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 7',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 8',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 9',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 10',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 11',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },
                 {
-                    title: 'Card 12',
-                    description: 'Foto Saat ...',
+                    title: 'OMK',
+                    description: 'Penampilan Natal',
                     imageUrl: 'https://via.placeholder.com/150',
                     date: new Date(),
                 },

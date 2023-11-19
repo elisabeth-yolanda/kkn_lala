@@ -15,7 +15,7 @@
                                 <i class="fas fa-calendar-alt" style="margin-right: 4px;"></i>
                                 {{ formatDate(card.date) }}
                             </p>
-                            <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-right: -6%; margin-top: 3%">More Info</button>
+                            <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-right: -6%; margin-top: 3%">Lihat Selengkapnya</button>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         <i class="fas fa-calendar-alt" style="margin-right: 4px;"></i>
                         {{ formatDate(card.date) }}
                     </p>
-                    <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-right: -5%; margin-top: 3%">More Info</button>
+                    <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-right: -5%; margin-top: 3%">Lihat Selengkapnya</button>
                 </div>
             </div>
         </div>
