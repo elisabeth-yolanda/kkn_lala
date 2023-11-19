@@ -34,7 +34,7 @@
                         <i class="fas fa-calendar-alt" style="margin-right: 4px;"></i>
                         {{ formatDate(card.date) }}
                     </p>
-                    <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-right: -5%; margin-top: 3%">Lihat Selengkapnya</button>
+                    <button class="more-info-btn" @click="showMoreInfo(card)" style="margin-top: 3%;margin-left: 10px;">Lihat Selengkapnya</button>
                 </div>
             </div>
         </div>
@@ -50,13 +50,13 @@ export default {
                     title: 'Card 1',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 2',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 3',
@@ -68,55 +68,55 @@ export default {
                     title: 'Card 4',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 5',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 6',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 7',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 8',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 9',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 10',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 11',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
                 {
                     title: 'Card 12',
                     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     imageUrl: 'https://via.placeholder.com/150',
-                    date: new Date(),
+                    date: '01-23-2023 00:00:00',
                 },
             ],
         };
@@ -157,14 +157,12 @@ export default {
     align-items: center;
 }
 
-/* Additional styling for smaller screens */
 @media (max-width: 768px) {
     .card {
         width: 45%;
     }
 }
 
-/* Additional styling for even smaller screens */
 @media (max-width: 576px) {
     .card {
         width: 100%;
@@ -236,14 +234,12 @@ hr {
     text-align: justify;
 }
 
-/* Additional styling for smaller screens */
 @media (max-width: 768px) {
     .card-all {
         width: 45%;
     }
 }
 
-/* Additional styling for even smaller screens */
 @media (max-width: 576px) {
     .card-all {
         width: 90%;
@@ -268,12 +264,11 @@ hr {
     margin-top: 10px;
 }
 .card-all-content .description {
-    text-align: justify;
+    text-align: left;
     font-size: 0.7rem;
 }
 .card-content .description {
     font-size: 0.7rem;
-    text-align: justify;
+    text-align: left;
 }
-
 </style>

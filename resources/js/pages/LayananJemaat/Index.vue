@@ -3,6 +3,12 @@
         <div class="row justify-content-center">
             <div class="col-md-10 text-center">
                 <div class="font-size-24 font-weight-500">Kantor Gereja</div>
+                <button class="scroll-button" @click="scrollPage(-1)" style="margin-bottom: 20%">
+                    <i class="fas fa-angle-double-up"></i>
+                </button>
+                <button class="scroll-button" @click="scrollPage(1)" style="margin-bottom: -20%">
+                    <i class="fas fa-angle-double-down"></i>
+                </button>
                 <div class="card-container mt-4">
                     <div v-for="(card, index) in cards.slice(0, 2)" :key="index" class="card">
                         <img src="/assets/images/sekretaris_2.jpg" alt="card.title" class="card-image" />
@@ -119,6 +125,17 @@ export default {
                 day: 'numeric',
             }).format(date);
         },
+        scrollPage(direction) {
+            const scrollAmount = 200;
+
+            const currentPosition = window.scrollY || document.documentElement.scrollTop;
+            const newPosition = currentPosition + direction * scrollAmount;
+
+            window.scrollTo({
+                top: newPosition,
+                behavior: 'smooth',
+            });
+        },
     },
 };
 </script>
@@ -142,14 +159,12 @@ export default {
     align-items: center;
 }
 
-/* Additional styling for smaller screens */
 @media (max-width: 768px) {
     .card {
         width: 45%;
     }
 }
 
-/* Additional styling for even smaller screens */
 @media (max-width: 576px) {
     .card {
         width: 100%;
@@ -238,6 +253,29 @@ hr {
 .card-content .description {
     font-size: 1rem;
     text-align: justify;
+}
+.scroll-button {
+    position: fixed;
+    right: 20px;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: #00227e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: #0044a2;
+}
+@media (max-width: 767px) {
+    .scroll-button {
+        display: none;
+    }
 }
 
 </style>

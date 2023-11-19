@@ -6,14 +6,14 @@
                     <img src="assets/images/GKJ Logo.png" alt="Logo" height="60" width="60" />
                 </router-link>
             </b-navbar-brand>
-            <div v-if="isCollapse" role="button" class="btn border-0 d-md-none" @click="toggleCollapse(false)">
+            <div v-if="isCollapse" role="button" class="btn border-0 d-md-none" @click="toggleCollapse">
                 <i class="fas fa-times font-size-30"></i>
             </div>
-            <div v-else role="button" class="btn border-0 d-md-none" @click="toggleCollapse(true)">
+            <div v-else role="button" class="btn border-0 d-md-none" @click="toggleCollapse">
                 <i class="fas fa-bars font-size-30"></i>
             </div>
 
-            <b-collapse id="navBarCollapse" is-nav>
+            <b-collapse id="navBarCollapse" is-nav v-model="isCollapse">
                 <ul class="navbar-nav ms-auto">
                     <li v-for="item in navbar" class="nav-item" @click="toggleCollapse(false)">
                         <router-link
@@ -39,7 +39,7 @@
                 no-close-on-esc
                 no-close-on-backdrop
                 hide-footer
-                :id="modalId"
+
             >
                 <div class="login-form">
                     <b-form @submit.prevent="login">
@@ -62,10 +62,10 @@
                             ></b-form-input>
                         </b-form-group>
                         <div class="text-end mt-3">
-                            <b-button @click="closeLoginModal" variant="danger" v-b-modal.cancel class="btn-cancel mt-3">
+                            <b-button @click="closeLoginModal" v-b-modal.cancel class="btn-cancel mt-3" style="background-color: red">
                                 Cancel
                             </b-button>
-                            <b-button type="submit" variant="primary" class="mt-3" v-b-modal.ok>
+                            <b-button type="submit" class="mt-3" v-b-modal.ok style="background-color: blue; margin-left: 3%;">
                                 Login
                             </b-button>
                         </div>
@@ -97,8 +97,13 @@ export default {
         };
     },
     methods: {
-        toggleCollapse(status) {
-            this.isCollapse = status;
+        toggleCollapse() {
+            this.isCollapse = !this.isCollapse;;
+            const navBarCollapse = $('#navBarCollapse');
+            if (this.isCollapse)
+                navBarCollapse.show('slow');
+            else
+                navBarCollapse.hide('slow');
         },
         isLinkActive(link) {
             return this.$route.path === link;
@@ -116,7 +121,6 @@ export default {
 <style scoped>
 button {
     background-color: #00227e;
-    /* Green */
     color: white;
     padding: 6px 18px;
     border: none;
@@ -127,13 +131,6 @@ button {
 }
 .active-link {
     color: blue !important;
-    /* Add !important to ensure the style is applied */
-}
-
-.btn-cancel {
-    background-color: #dc3545; /* Adjust the background color for the Cancel button */
-    color: white; /* Adjust the text color for the Cancel button */
-    margin-right: 10px; /* Add margin between buttons */
 }
 
 </style>
